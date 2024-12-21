@@ -1,0 +1,189 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: large;
+    background-image: url('red.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white;
+}
+
+/* Header Styling */
+header {
+    background: #d90429; 
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-style: oblique;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffba08;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    max-width: 1200px;
+}
+
+h2 {
+    color: #ffba08;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+#about p {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* Menu Section */
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-left, .menu-right {
+    width: 48%;
+}
+
+.menu-left ul, .menu-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-left li, .menu-right li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.menu-left li:hover, .menu-right li:hover {
+    transform: scale(1.05);
+}
+
+.menu-left li img, .menu-right li img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+    border: 2px solid #ffba08;
+}
+
+.menu-left li b, .menu-right li b {
+    font-size: 1.1em;
+    color: #fff;
+}
+
+/* Contact Section */
+#contact p {
+    text-align: center;
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #d90429;
+    color: white;
+    margin-top: 20px;
+    font-size: 0.9em;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-left, .menu-right {
+        width: 100%;
+    }
+
+    .menu-left li img, .menu-right li img {
+        width: 120px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    footer {
+        font-size: 0.8em;
+        }
+}
